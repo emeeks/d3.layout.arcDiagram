@@ -24,10 +24,10 @@
       })
 
       edges.forEach(function(edge) {
-        if (typeof edge.source == "number") {
+        if (typeof edge.source === "number") {
           edge.source = nodes[edge.source];
         }
-        if (typeof edge.target == "number") {
+        if (typeof edge.target === "number") {
           edge.target = nodes[edge.target];
         }
         var id = nodeID(edge.source) + "-" + nodeID(edge.target);
